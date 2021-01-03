@@ -33,7 +33,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'css/style.min.css'
+      filename: 'css/[contenthash:8].min.css'
     }),
     new OptiomizeCssAssetsWebpackPlugin()
   ],
