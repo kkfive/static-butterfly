@@ -11,7 +11,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptiomizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
-  entry: './src/js/index.js',
+  entry: {
+    index: './src/js/index.js',
+    font: './src/js/font.js'
+  },
   output: {
     filename: '[chunkhash:8].js',
     path: resolve(__dirname, 'dist')
@@ -27,6 +30,24 @@ module.exports = {
           'postcss-loader',
           'less-loader'
         ]
+      },
+      // css解析
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+      },
+      // 排除 css js html 文件
+      // { exclude: /\.(css|js|html)/, loader: 'file-loader' }
+      {
+        //解析字体
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        loader: 'file-loader', // url-loader 也可以用来解析字体
+        options: {
+          publicPath:
+            // 'https://cdn.jsdelivr.net/gh/dreamy-tzk/Static_butterfly/dist/font/',
+            '/font',
+          outputPath: 'font'
+        }
       }
     ]
   },
@@ -35,8 +56,8 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename:
         process.env.NODE_ENV === 'development'
-          ? 'css/style.min.css'
-          : 'css/[contenthash:8].min.css'
+          ? 'css/[name].min.css'
+          : 'css/[name].[contenthash:8].css'
     }),
     new OptiomizeCssAssetsWebpackPlugin()
   ],
