@@ -40,8 +40,9 @@ jobs:
           export TZ='Asia/Shanghai'
           yarn build
           cd dist
-          copy ./css/index.*.css ./css/index.min.css
-          copy ./css/font.*.css ./css/font.min.css
+          cp ./css/index.*.css ./css/index.min.css
+          cp ./css/font.*.css ./css/font.min.css
+          
       - name: 6. 读取当前版本号
         id: version
         uses: ashley-taylor/read-json-property-action@v1.0
