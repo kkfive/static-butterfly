@@ -44,8 +44,7 @@ module.exports = {
         loader: 'file-loader', // url-loader 也可以用来解析字体
         options: {
           publicPath:
-            // 'https://cdn.jsdelivr.net/gh/dreamy-tzk/Static_butterfly/dist/font/',
-            '/font',
+            'https://cdn.jsdelivr.net/gh/dreamy-tzk/Static_butterfly/dist/font/',
           outputPath: 'font'
         }
       }
