@@ -42,7 +42,7 @@ jobs:
           cd dist
           cp ./css/index.*.css ./css/index.min.css
           cp ./css/font.*.css ./css/font.min.css
-          
+
       - name: 6. 读取当前版本号
         id: version
         uses: ashley-taylor/read-json-property-action@v1.0
@@ -77,5 +77,5 @@ jobs:
 
       - name: 10. 刷新缓存
         run: |
-          curl https://purge.jsdelivr.net/gh/dreamy-tzk/Static_butterfly/dist/css/index.min.css
-          curl https://purge.jsdelivr.net/gh/dreamy-tzk/Static_butterfly/dist/css/font.min.css
+          curl https://purge.jsdelivr.net/npm/static-butterfly@latest/dist/css/index.min.css
+          curl https://purge.jsdelivr.net/npm/static-butterfly@latest/dist/css/font.min.css
