@@ -13,6 +13,7 @@ install:
   - yarn install
 
 script:
+  - yarn build
   - cp ./css/index.*.css ./css/index.min.css
   - cp ./css/font.*.css ./css/font.min.css
   - npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
