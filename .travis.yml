@@ -14,8 +14,8 @@ install:
 
 script:
   - yarn build
-  - cp ./css/index.*.css ./css/index.min.css
-  - cp ./css/font.*.css ./css/font.min.css
+  - cp ./dist/css/index.*.css ./dist/css/index.min.css
+  - cp ./dist/css/font.*.css ./dist/css/font.min.css
   - npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
   - npm publish
   - curl https://purge.jsdelivr.net/npm/static-butterfly@latest/dist/css/index.min.css
