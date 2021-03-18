@@ -1,7 +1,7 @@
 # This file is a template, and might need editing before it works on your project.
 # Official framework image. Look for the different tagged releases at:
 # https://hub.docker.com/r/library/node/tags/
-image: node:latest
+image: node:14-alpine
 
 build:
   script:
@@ -12,3 +12,6 @@ build:
     - npm publish
     - curl https://purge.jsdelivr.net/npm/static-butterfly@latest/dist/css/index.min.css
     - curl https://purge.jsdelivr.net/npm/static-butterfly@latest/dist/css/font.min.css
+  cache:
+    paths:
+      - node_modules/
