@@ -4,9 +4,6 @@
 image: node:latest
 
 build:
-  cache:
-    paths:
-      - node_modules/
   script:
     - npm install
     - cp ./dist/css/index.*.css ./dist/css/index.min.css
