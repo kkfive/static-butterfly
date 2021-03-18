@@ -11,8 +11,7 @@ build:
     - cp ./dist/css/font.*.css ./dist/css/font.min.css
     - npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
     - npm publish
-    - curl https://purge.jsdelivr.net/npm/static-butterfly@latest/dist/css/index.min.css
-    - curl https://purge.jsdelivr.net/npm/static-butterfly@latest/dist/css/font.min.css
+
   cache:
     paths:
       - node_modules/
