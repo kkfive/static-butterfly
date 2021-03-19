@@ -43,7 +43,8 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         loader: 'file-loader', // url-loader 也可以用来解析字体
         options: {
-          publicPath: 'https://cdn.jsdelivr.net/gh/tzki/StaticFile/Hexo/font/',
+          publicPath:
+            'https://cdn.jsdelivr.net/npm/static-butterfly/dist/font/',
           outputPath: 'font'
         }
       }
