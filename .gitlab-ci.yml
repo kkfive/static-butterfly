@@ -9,6 +9,7 @@ build:
     - npm run build
     - cp ./dist/css/index.*.css ./dist/css/index.min.css
     - cp ./dist/css/font.*.css ./dist/css/font.min.css
+    - cp ./dist/css/volantis.*.css ./dist/css/volantis.min.css
     - npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
     - npm publish
 
