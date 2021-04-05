@@ -13,6 +13,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
   entry: {
     index: './src/js/index.js',
+    volantis: './src/js/volantis.js',
     font: './src/js/font.js'
   },
   output: {
