@@ -1,15 +1,10 @@
 /**
  * @description: webpack配置文件
- * @author: 小康
- * @url: https://xiaokang.me
- * @Date: 2021-01-03 10:24:50
- * @LastEditTime: 2021-01-03 10:25:54
- * @LastEditors: 小康
  */
 const { resolve } = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptiomizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
   entry: {
     index: './src/js/index.js',
@@ -18,7 +13,8 @@ module.exports = {
   },
   output: {
     filename: '[chunkhash:8].js',
-    path: resolve(__dirname, 'dist')
+    path: resolve(__dirname, 'dist'),
+    clean: true
   },
   module: {
     rules: [
@@ -44,15 +40,13 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         loader: 'file-loader', // url-loader 也可以用来解析字体
         options: {
-          publicPath:
-            'https://cdn.jsdelivr.net/npm/static-butterfly/dist/font/',
+          publicPath: '../font/',
           outputPath: 'font'
         }
       }
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename:
         process.env.NODE_ENV === 'development'

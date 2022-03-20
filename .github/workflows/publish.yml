@@ -74,8 +74,3 @@ jobs:
           body: ${{steps.description.outputs.content}}
           draft: false
           prerelease: false
-
-      - name: 10. 刷新缓存
-        run: |
-          curl https://purge.jsdelivr.net/npm/static-butterfly@latest/dist/css/index.min.css
-          curl https://purge.jsdelivr.net/npm/static-butterfly@latest/dist/css/font.min.css
