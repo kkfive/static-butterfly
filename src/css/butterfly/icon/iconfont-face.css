@@ -1,0 +1,178 @@
+@font-face {
+  font-family: 'iconfont'; /* Project id 3402931 */
+  /* Color fonts */
+  src: url('//at.alicdn.com/t/font_3402931_k7wduyne5s.woff2?t=1652625245211')
+      format('woff2'),
+    url('//at.alicdn.com/t/font_3402931_k7wduyne5s.woff?t=1652625245211')
+      format('woff'),
+    url('//at.alicdn.com/t/font_3402931_k7wduyne5s.ttf?t=1652625245211')
+      format('truetype');
+}
+
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-angel:before {
+  content: '\e6e9';
+}
+
+.iconzhongdu:before {
+  content: '\e6ea';
+}
+
+.iconku:before {
+  content: '\e6eb';
+}
+
+.iconmimang:before {
+  content: '\e6ec';
+}
+
+.icon-angry:before {
+  content: '\e6ed';
+}
+
+.icon-cool:before {
+  content: '\e6ee';
+}
+
+.icon-dizzy:before {
+  content: '\e6ef';
+}
+
+.icon-cry:before {
+  content: '\e6f0';
+}
+
+.icon-cry-:before {
+  content: '\e6f1';
+}
+
+.icon-expressionless:before {
+  content: '\e6f2';
+}
+
+.icon-devil:before {
+  content: '\e6f3';
+}
+
+.icon-flushed:before {
+  content: '\e6f4';
+}
+
+.icon-happy-:before {
+  content: '\e6f5';
+}
+
+.icon-happy-1:before {
+  content: '\e6f6';
+}
+
+.icon-happy:before {
+  content: '\e6f7';
+}
+
+.icon-injury:before {
+  content: '\e6f8';
+}
+
+.icon-joy:before {
+  content: '\e6f9';
+}
+
+.icon-in-love:before {
+  content: '\e6fa';
+}
+
+.icon-kiss-:before {
+  content: '\e6fc';
+}
+
+.icon-mask:before {
+  content: '\e6fe';
+}
+
+.icon-neutral:before {
+  content: '\e6ff';
+}
+
+.icon-mute:before {
+  content: '\e700';
+}
+
+.icon-sad:before {
+  content: '\e701';
+}
+
+.icon-sad-:before {
+  content: '\e702';
+}
+
+.icon-scared:before {
+  content: '\e703';
+}
+
+.icon-secret:before {
+  content: '\e704';
+}
+
+.icon-scared-:before {
+  content: '\e705';
+}
+
+.icon-shocked:before {
+  content: '\e706';
+}
+
+.icon-sick:before {
+  content: '\e707';
+}
+
+.icon-smile:before {
+  content: '\e709';
+}
+
+.icon-sleeping:before {
+  content: '\e70a';
+}
+
+.icon-smiling-:before {
+  content: '\e70b';
+}
+
+.icon-smiling:before {
+  content: '\e70c';
+}
+
+.icon-sweat:before {
+  content: '\e70d';
+}
+
+.icon-smirking:before {
+  content: '\e70f';
+}
+
+.icon-thinking:before {
+  content: '\e710';
+}
+
+.icon-tired:before {
+  content: '\e711';
+}
+
+.icon-tongue:before {
+  content: '\e714';
+}
+
+.icon-unamused:before {
+  content: '\e715';
+}
+
+.icon-wink:before {
+  content: '\e716';
+}
