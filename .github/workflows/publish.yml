@@ -39,6 +39,7 @@ jobs:
         run: |
           export TZ='Asia/Shanghai'
           yarn build
+          cp public/* ./dist
           cd dist
           cp ./css/index.*.css ./css/index.min.css
           cp ./css/font.*.css ./css/font.min.css
